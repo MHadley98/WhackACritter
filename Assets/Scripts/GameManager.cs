@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public List<GameObject> critterPrefabs;
     public float critterSpawnFrequency=1.0f;
     public Score scoreDisplay;
+    public Timer timer;
 
     private float lastCritterSpawn = 0;
 
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         //check if it is time to spawn the next critter
         float nextSpawnTime = lastCritterSpawn + critterSpawnFrequency;
-		if (Time.time >= lastCritterSpawn+critterSpawnFrequency)
+		if (Time.time >= nextSpawnTime&&timer.IsTimerRunning()==true)
         {
             //it's time
             //choose a random critter to spawn

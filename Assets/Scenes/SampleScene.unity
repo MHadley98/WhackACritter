@@ -415,6 +415,7 @@ MonoBehaviour:
   - {fileID: 1572093672525518, guid: b8facc243abf7f745a1b3266a6cf9051, type: 2}
   critterSpawnFrequency: 1
   scoreDisplay: {fileID: 812253678}
+  timer: {fileID: 1716047162}
 --- !u!4 &1356884474
 Transform:
   m_ObjectHideFlags: 0
